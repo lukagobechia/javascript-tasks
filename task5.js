@@ -3,7 +3,7 @@ function randomString(length) {
   let string = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
   for (let i = 0; i < length; i++) {
     let randomNum = Math.random() * string.length;
-    randomString +=string.charAt(Math.round(randomNum)) 
+    randomString +=string.charAt(Math.floor(randomNum)) 
   }
 
   return randomString;
